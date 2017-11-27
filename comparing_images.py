@@ -15,7 +15,7 @@ import cv2
 def MSE (Resim1, Resim2):
 
     hata = np.sum((Resim1.astype("float") - Resim2.astype("float"))**2)
-    hata /= float(Resim1.shape[0]* Resim2.shape[1])
+    hata /= float(Resim1.shape[0]* Resim1.shape[1])
     return hata
 
 
